@@ -4,10 +4,10 @@ metadata:
   name: nginx-service
   labels:
     app: my-nginx
-spec:
-  type: LoadBalancer
+spec: 
+  type: ClusterIP   
   selector:
     app: my-nginx
   ports:
-    - port: 80
-      targetPort: 80
+    - port: 8080
+      targetPort: 80      
