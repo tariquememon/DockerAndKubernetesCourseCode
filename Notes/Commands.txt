@@ -1,0 +1,24 @@
+kubectl create deployment -f file.deployment.yml --save-config
+
+kubectl create deployment -f file.deployment.yml --save-config --record (record the command in the deployment revision history)
+
+kubectl apply deployment -f file.deployment.yml
+
+kubectl scale deployment [deployment-name] --replicas=5
+
+kubectl scale -f file.deployment.yml --replicas=5
+
+kubectl get all
+
+kubectl get pods
+
+# Get information about a deployment
+kubectl rollout status deployment [deployment-name]
+
+kubectl rollout status -f file.deployment.yml
+
+kubectl rollout history deployment [deployment-name]
+
+kubectl rollout history deployment [deployment-name] --revision=2
+
+kubectl rollout undo deployment [deployment-name] --to-revision=2

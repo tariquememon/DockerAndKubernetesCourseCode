@@ -1,0 +1,11 @@
+Kops - for production
+
+Rolling Updates - Replace existing Pods one by one without impactcing traffic to Pods
+
+Zero-downtime deployments
+
+Blue-Green deployments
+
+Canary deployments
+
+Rollbacks
